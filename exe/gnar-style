@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require "gnar/style"
+Gnar::Style::Cli::Application.start(ARGV)
