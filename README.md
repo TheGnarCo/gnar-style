@@ -1,15 +1,15 @@
-# Gnar::Style
+# gnar-style
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gnar/style`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Gnar shared style configurations.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gnar-style'
+group :development, :test
+  gem 'gnar-style'
+end
 ```
 
 And then execute:
@@ -22,20 +22,34 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a `.rubocop.yml` with the following configuration:
 
-## Development
+```yaml
+inherit_gem:
+  gnar-style:
+    - default.yml
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+To check your application against these style configurations:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```bash
+$ bundle exec rubocop
+```
+
+This gem includes rubocop, and it's not necessary to separately include rubocop directly in your application's dependencies.
+
+## Different Styles
+
+gnar-style provides defaults for three different scenarios. You can specify which configuration to use in your `rubocop.yml`. See the [Usage](#usage) section for details.
+
+* `default.yml` - Base styling configurations.
+* `default_rails.yml` - Styling for use in a rails project.
+* `default_gem.yml` - Styling for use in a gem.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gnar-style. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/TheGnarCo/gnar-style. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
