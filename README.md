@@ -22,12 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
+This gem includes rubocop, and it's not necessary to separately include rubocop directly in your application's dependencies.
+
+### Inheriting from the gem
+
 Create a `.rubocop.yml` with the following configuration:
 
 ```yaml
 inherit_gem:
   gnar-style:
-    - default.yml
+    # Choose from one of these three
+    - gnar_style/rubocop.yml # if the pure ruby style is all that's needed
+    - gnar_style/rubocop_gem.yml # if the application is a gem, already inherits from the default ruby style
+    - gnar_style/rubocop_rails.yml # if the application is a rails project, already inherits from the default ruby style
 ```
 
 To check your application against these style configurations:
@@ -36,7 +43,47 @@ To check your application against these style configurations:
 $ bundle exec rubocop
 ```
 
-This gem includes rubocop, and it's not necessary to separately include rubocop directly in your application's dependencies.
+You [must](https://github.com/bbatsov/rubocop/blob/master/manual/configuration.md#inheriting-configuration-from-a-dependency-gem) use `bundle exec` when using the `inherit_gem` directive.
+
+### Inheriting from local copies of gem files
+
+Use this approach should you not be able to, or not want to, use the `inherit_gem` directive. This may be because the requirement to use `bundle exec rubocop` to find the dependency's runtime installation path is not an option for you.
+
+There is a command to copy the templates locally:
+
+```bash
+$ bundle exec gnar-style copy_local
+```
+
+The `copy_local` command accepts a `--format` option to specify what kind of project you have, and therefore, what files you need.
+
+Acceptable options for the format are:
+* `ruby` (the default)
+* `gem`
+* `rails`
+
+You can use this option as follows:
+```bash
+$ bundle exec gnar-style copy_local --format=gem
+```
+
+Create a `.rubocop.yml` with the following configuration:
+
+```yaml
+inherit_from:
+  # Choose from one of these three
+  - "gnar_style/rubocop.yml"  # if the pure ruby style is all that's needed
+  - gnar_style/rubocop_gem.yml # if the application is a gem, already inherits from the default ruby style
+  - gnar_style/rubocop_rails.yml # if the application is a rails project, already inherits from the default ruby style
+```
+
+To check your application against these style configurations:
+
+```bash
+$ rubocop
+```
+
+Upon updating this gem for any future updates, you'll need to re-run the `copy_local` command to store the updates locally.
 
 ## Overriding Styles
 
