@@ -1,5 +1,9 @@
 inherit_from: default.yml
 
+Layout/ExtraSpacing:
+  Exclude:
+    - '*.gemspec'
+
 Layout/SpaceAroundOperators:
   Exclude:
     - '*.gemspec'
@@ -7,7 +11,4 @@ Layout/SpaceAroundOperators:
 Metrics/BlockLength:
   Exclude:
     - '*.gemspec'
-
-Style/ExtraSpacing:
-  Exclude:
-    - '*.gemspec'
+    - 'spec/**/*'
