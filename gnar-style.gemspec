@@ -1,17 +1,16 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'gnar/style/version'
+require "gnar/style/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "gnar-style"
   spec.version       = Gnar::Style::VERSION
-  spec.authors       = ["Kevin Murphy"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["The Gnar Company"]
+  spec.email         = ["hi@thegnar.co"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Style guide default configuration for The Gnar Company"
+  spec.homepage      = "https://github.com/TheGnarCo/gnar-style"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,6 +29,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "rubocop", "~> 0.49"
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
