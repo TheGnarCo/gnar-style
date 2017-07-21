@@ -1,4 +1,4 @@
-inherit_from: default.yml
+inherit_from: rubocop.yml
 
 Layout/ExtraSpacing:
   Exclude:
