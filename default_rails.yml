@@ -1,0 +1,13 @@
+inherit_from: default.yml
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - 'vendor/**/*'
+
+Rails:
+  Enabled: true
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/**/*'
