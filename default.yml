@@ -28,3 +28,7 @@ Layout/AlignParameters:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*'
