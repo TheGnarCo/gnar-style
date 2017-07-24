@@ -1,1 +1,1 @@
-inherit_from: gnar_style/rubocop_gem.yml
+inherit_from: rubocop/rubocop_gem.yml
