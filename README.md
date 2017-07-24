@@ -116,9 +116,9 @@ If you want to add to the list, you'll instead need to add in the prior array el
 
 gnar-style provides defaults for three different scenarios. You can specify which configuration to use in your `rubocop.yml`. See the [Usage](#usage) section for details.
 
-* `default.yml` - Base styling configurations.
-* `default_rails.yml` - Styling for use in a rails project.
-* `default_gem.yml` - Styling for use in a gem.
+* `rubocop.yml` - Base styling configurations.
+* `rubocop_rails.yml` - Styling for use in a rails project.
+* `rubocop_gem.yml` - Styling for use in a gem.
 
 ## Contributing
 
