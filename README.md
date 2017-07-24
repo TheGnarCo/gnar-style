@@ -32,9 +32,9 @@ Create a `.rubocop.yml` with the following configuration:
 inherit_gem:
   gnar-style:
     # Choose from one of these three
-    - gnar_style/rubocop.yml # if the pure ruby style is all that's needed
-    - gnar_style/rubocop_gem.yml # if the application is a gem, already inherits from the default ruby style
-    - gnar_style/rubocop_rails.yml # if the application is a rails project, already inherits from the default ruby style
+    - "rubocop/rubocop.yml" # if the pure ruby style is all that's needed
+    - "rubocop/rubocop_gem.yml" # if the application is a gem, already inherits from the default ruby style
+    - "rubocop/rubocop_rails.yml" # if the application is a rails project, already inherits from the default ruby style
 ```
 
 To check your application against these style configurations:
@@ -73,8 +73,8 @@ Create a `.rubocop.yml` with the following configuration:
 inherit_from:
   # Choose from one of these three
   - "gnar_style/rubocop.yml"  # if the pure ruby style is all that's needed
-  - gnar_style/rubocop_gem.yml # if the application is a gem, already inherits from the default ruby style
-  - gnar_style/rubocop_rails.yml # if the application is a rails project, already inherits from the default ruby style
+  - "gnar_style/rubocop_gem.yml" # if the application is a gem, already inherits from the default ruby style
+  - "gnar_style/rubocop_rails.yml" # if the application is a rails project, already inherits from the default ruby style
 ```
 
 To check your application against these style configurations:
@@ -101,7 +101,7 @@ Metrics/BlockLength:
 # In your app's .rubocop.yml
 inherit_gem:
   gnar-style:
-    - default.yml
+    - "rubocop/rubocop.yml"
 
 Metrics/BlockLength:
   Exclude:

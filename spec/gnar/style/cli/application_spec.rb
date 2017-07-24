@@ -7,7 +7,7 @@ module Gnar
       RSpec.describe Application do
         describe ".source_root" do
           it "traverses up the tree and into the gnar_style directory" do
-            end_dir = "lib/gnar/style/cli/../../../../gnar_style"
+            end_dir = "lib/gnar/style/cli/../../../../rubocop"
             expect(Gnar::Style::Cli::Application.source_root).to end_with end_dir
           end
         end

@@ -20,7 +20,7 @@ module Gnar
         end
 
         def self.source_root
-          "#{File.dirname(__FILE__)}/../../../../gnar_style"
+          "#{File.dirname(__FILE__)}/../../../../rubocop"
         end
       end
     end
