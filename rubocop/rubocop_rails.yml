@@ -4,6 +4,7 @@ AllCops:
   Exclude:
     - db/schema.rb
     - 'vendor/**/*'
+    - db/seeds.rb
 
 Rails:
   Enabled: true
