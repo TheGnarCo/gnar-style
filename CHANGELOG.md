@@ -1,5 +1,7 @@
 ## Current release (in development)
 
+## 0.3.0
+
 * Enforce trailing commas for multi-line literals and method calls. [#10](https://github.com/TheGnarCo/gnar-style/pull/10)
   *Zach Fletcher*
 
