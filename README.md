@@ -127,3 +127,12 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/TheGna
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## About The Gnar Company
+
+![The Gnar Company](https://avatars0.githubusercontent.com/u/17011419?s=100&v=4)
+
+The Gnar Company is a Boston-based development company that builds robust
+web and mobile apps designed for the long haul.
+
+For more information see [our website](https://www.thegnar.co/).
