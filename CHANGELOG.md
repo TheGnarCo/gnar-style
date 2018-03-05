@@ -1,5 +1,8 @@
 ## Current release (in development)
 
+* Update trailing comma literal cops for new rubocop version. [#17](https://github.com/TheGnarCo/gnar-style/pull/17)
+  [Kevin Murphy](https://github.com/kevin-j-m)
+
 ## 0.3.0 - 2017-11-03
 
 * Enforce trailing commas for multi-line literals and method calls. [#10](https://github.com/TheGnarCo/gnar-style/pull/10)
