@@ -41,3 +41,6 @@ Metrics/BlockLength:
 Metrics/ModuleLength:
   Exclude:
     - 'spec/**/*'
+
+Style/BlockComments:
+  Enabled: false
