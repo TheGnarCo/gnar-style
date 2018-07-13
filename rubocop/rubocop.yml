@@ -7,6 +7,9 @@ Metrics/LineLength:
   Max: 100
   Severity: refactor
 
+Style/ConditionalAssignment:
+  EnforcedStyle: assign_inside_condition
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 
