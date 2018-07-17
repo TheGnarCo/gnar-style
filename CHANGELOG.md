@@ -1,5 +1,7 @@
 ## Current release (in development)
 
+## 0.5.0 - 2018-07-17
+
 * Update conditional assignment preferred style. [#20](https://github.com/TheGnarCo/gnar-style/pull/20)
   [Kevin Murphy](https://github.com/kevin-j-m)
 
