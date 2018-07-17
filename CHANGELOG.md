@@ -1,5 +1,8 @@
 ## Current release (in development)
 
+* Update conditional assignment preferred style. [#20](https://github.com/TheGnarCo/gnar-style/pull/20)
+  [Kevin Murphy](https://github.com/kevin-j-m)
+
 ## 0.4.0 - 2018-03-05
 
 * Update trailing comma literal cops for new rubocop version. [#17](https://github.com/TheGnarCo/gnar-style/pull/17)
