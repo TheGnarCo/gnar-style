@@ -1,8 +1,3 @@
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-  Exclude:
-    - 'Gemfile'
-
 Metrics/LineLength:
   Max: 100
   Severity: refactor
