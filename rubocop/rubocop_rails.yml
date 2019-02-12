@@ -3,6 +3,8 @@ inherit_from: rubocop.yml
 AllCops:
   Exclude:
     - db/schema.rb
+    - 'bin/**/*'
+    - 'node_modules/**/*'
     - 'vendor/**/*'
 
 Rails:
