@@ -47,3 +47,6 @@ Metrics/ModuleLength:
 
 Style/EmptyMethod:
   EnforcedStyle: expanded
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
