@@ -1,6 +1,9 @@
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
