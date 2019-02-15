@@ -120,6 +120,10 @@ gnar-style provides defaults for three different scenarios. You can specify whic
 * `rubocop_rails.yml` - Styling for use in a rails project.
 * `rubocop_gem.yml` - Styling for use in a gem.
 
+## Philosophy
+
+Our adherence to our style guide is based on the general case, and not to ensure there are no exceptions. Our philosophy is to use the guide precisely in that way - as a guide. It's not meant as a command that must be taken, but a suggestion to be considered. To the extent that deviations make sense sometimes - great, deviate. However, having rubocop start the discussion and if nothing else, having the author justify to themselves why this deviation is warranted, can be valuable.  
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/TheGnarCo/gnar-style. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
