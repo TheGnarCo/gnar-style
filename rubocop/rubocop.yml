@@ -1,21 +1,44 @@
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Metrics/BlockLength:
   Exclude:
-    - 'Gemfile'
+    - 'spec/**/*'
 
 Metrics/LineLength:
   Max: 100
   Severity: refactor
 
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*'
+
 Style/ConditionalAssignment:
   EnforcedStyle: assign_inside_condition
   IncludeTernaryExpressions: false
 
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/Documentation:
+Style/ParenthesesAroundCondition:
   Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  Exclude:
+    - 'Gemfile'
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
 
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
@@ -25,26 +48,3 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
-
-Style/SymbolArray:
-  EnforcedStyle: brackets
-
-Style/ParenthesesAroundCondition:
-  Enabled: false
-
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
-Layout/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*'
-
-Metrics/ModuleLength:
-  Exclude:
-    - 'spec/**/*'
-
-Style/EmptyMethod:
-  EnforcedStyle: expanded
