@@ -19,6 +19,9 @@ Metrics/ModuleLength:
   Exclude:
     - 'spec/**/*'
 
+Rails/NotNullColumn:
+  Enabled: false
+
 Style/ConditionalAssignment:
   EnforcedStyle: assign_inside_condition
   IncludeTernaryExpressions: false
