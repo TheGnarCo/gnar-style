@@ -35,6 +35,9 @@ Style/EmptyMethod:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/IfUnlessModifier:
+  Enabled: false
+
 Style/ParenthesesAroundCondition:
   Enabled: false
 
