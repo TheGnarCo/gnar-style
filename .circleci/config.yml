@@ -1,0 +1,36 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.2
+        environment:
+          RAILS_ENV: test
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - gnar-style-{{ checksum "gnar-style.gemspec" }}
+          # fallback to using the latest cache if no exact match is found
+          - gnar-style-
+
+      # Bundle install dependencies
+      - run:
+          name: install dependencies
+          command: bundle install --path vendor/bundle
+
+      # Store bundle cache
+      - save_cache:
+          paths:
+            - vendor/bundle
+          key: gnar-style-{{ checksum "gnar-style.gemspec" }}
+
+      # Tests
+      - run:
+          name: RSpec
+          command: bundle exec rspec
