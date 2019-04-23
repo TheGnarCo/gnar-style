@@ -5,4 +5,3 @@
 * Create a commit, including the version number in the commit message: `git add
   --all && git commit -m "Version x.y.z"`.
 * Push the release to RubyGems: `rake release`.
-* Check the RubyGems [twitter account](https://twitter.com/rubygems) to publicize the release.
