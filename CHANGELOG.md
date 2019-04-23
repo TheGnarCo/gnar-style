@@ -1,5 +1,7 @@
 ## Current release (in development)
 
+## 0.6.0 - 2019-04-23
+
 * Remove Style/IfUnlessModifier cop. [#33](https://github.com/TheGnarCo/gnar-style/pull/33)
 
   [Kevin Murphy](https://github.com/kevin-j-m)
