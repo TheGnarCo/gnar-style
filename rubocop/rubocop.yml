@@ -1,7 +1,7 @@
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
-Layout/IndentArray:
+Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
