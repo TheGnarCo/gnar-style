@@ -1,5 +1,7 @@
 ## Current release (in development)
 
+## 0.7.0 - 2019-05-21
+
 * Align method arguments with fixed indentation. [#38](https://github.com/TheGnarCo/gnar-style/pull/38)
 
   [Kevin Murphy](https://github.com/kevin-j-m)
