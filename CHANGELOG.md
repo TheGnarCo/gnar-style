@@ -1,5 +1,9 @@
 ## Current release (in development)
 
+* Align method arguments with fixed indentation. [#38](https://github.com/TheGnarCo/gnar-style/pull/38)
+
+  [Kevin Murphy](https://github.com/kevin-j-m)
+
 ## 0.6.1 - 2019-04-30
 
 * Rename IndentArray cop. [#37](https://github.com/TheGnarCo/gnar-style/pull/37)
