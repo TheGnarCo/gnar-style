@@ -38,6 +38,9 @@ Style/EmptyMethod:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/GuardClause:
+  Enabled: false
+
 Style/IfUnlessModifier:
   Enabled: false
 
