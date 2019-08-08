@@ -1,5 +1,19 @@
 ## Current release (in development)
 
+## 0.8.0 - 2019-08-08
+
+* Include rubocop rails cops. [#41](https://github.com/TheGnarCo/gnar-style/pull/41)
+
+  [Zach Fletcher](https://github.com/zfletch)
+
+* Remove guard clause cop. [#40](https://github.com/TheGnarCo/gnar-style/pull/40)
+
+  [Taylor Kearns](https://github.com/taylorkearns)
+
+* Include rubocop performance cops. [#39](https://github.com/TheGnarCo/gnar-style/pull/39)
+
+  [Kevin Murphy](https://github.com/kevin-j-m)
+
 ## 0.7.0 - 2019-05-21
 
 * Align method arguments with fixed indentation. [#38](https://github.com/TheGnarCo/gnar-style/pull/38)
