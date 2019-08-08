@@ -1,5 +1,7 @@
 inherit_from: rubocop.yml
 
+require: rubocop-rails
+
 AllCops:
   Exclude:
     - db/schema.rb
@@ -7,9 +9,9 @@ AllCops:
     - 'node_modules/**/*'
     - 'vendor/**/*'
 
-Rails:
-  Enabled: true
-
 Metrics/MethodLength:
   Exclude:
     - 'db/migrate/**/*'
+
+Rails/NotNullColumn:
+  Enabled: false
