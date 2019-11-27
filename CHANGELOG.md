@@ -1,5 +1,11 @@
 ## Current release (in development)
 
+## 0.9.0 - 2019-11-27
+
+* Rename AlignArguments, AlignParameters, IndentFirstArrayElement cops. [#42](https://github.com/TheGnarCo/gnar-style/pull/42)
+
+  [Mike Stone](https://github.com/mikestone14)
+
 ## 0.8.0 - 2019-08-08
 
 * Include rubocop rails cops. [#41](https://github.com/TheGnarCo/gnar-style/pull/41)
