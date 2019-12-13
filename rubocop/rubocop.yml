@@ -12,6 +12,10 @@ Layout/FirstArrayElementIndentation:
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
+Lint/UselessAssignment:
+  Exclude:
+    - "spec/**/*"
+
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
