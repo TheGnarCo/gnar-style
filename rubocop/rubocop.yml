@@ -16,6 +16,10 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 
+Metrics/ClassLength:
+  Exclude:
+    - 'app/models/**/*'
+
 Metrics/LineLength:
   Max: 100
   Severity: refactor
