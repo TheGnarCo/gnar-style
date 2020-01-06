@@ -1,5 +1,15 @@
 ## Current release (in development)
 
+## 0.10.0 - 2020-01-06
+
+* Rename Rename line length cop. [#45](https://github.com/TheGnarCo/gnar-style/pull/45)
+
+  [Zach Fletcher](https://github.com/zfletch)
+
+* Check in Gemfile.lock. [#45](https://github.com/TheGnarCo/gnar-style/pull/45)
+
+  [Zach Fletcher](https://github.com/zfletch)
+
 ## 0.9.0 - 2019-11-27
 
 * Rename AlignArguments, AlignParameters, IndentFirstArrayElement cops. [#42](https://github.com/TheGnarCo/gnar-style/pull/42)

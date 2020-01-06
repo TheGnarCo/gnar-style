@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gnar-style (0.9.0)
+    gnar-style (0.10.0)
       rubocop (~> 0.78)
       rubocop-performance
       rubocop-rails (~> 2.2.0)
@@ -32,10 +32,10 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
-    rubocop (0.78.0)
+    rubocop (0.79.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.6)
+      parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
@@ -58,4 +58,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   1.14.6
+   1.17.3
