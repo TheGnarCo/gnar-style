@@ -19,10 +19,15 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - gnar-style-
 
+      # update bundler
+      - run:
+          name: Update bundler
+          command: gem uninstall bundler && gem install bundler
+
       # Bundle install dependencies
       - run:
           name: install dependencies
-          command: bundle install --path vendor/bundle
+          command: bundle config set path 'vendor/bundle' && bundle install
 
       # Store bundle cache
       - save_cache:
