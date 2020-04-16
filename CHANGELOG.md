@@ -1,5 +1,11 @@
 ## Current release (in development)
 
+## 0.11.0 - 2020-04-16
+
+* Enable pending cops from rubocop version 0.80. [#49](https://github.com/TheGnarCo/gnar-style/pull/49)
+
+  [Dan Frenette](https://github.com/danfrenette)
+
 ## 0.10.0 - 2020-01-06
 
 * Rename Rename line length cop. [#45](https://github.com/TheGnarCo/gnar-style/pull/45)
