@@ -1,3 +1,6 @@
+AllCops:
+  NewCops: enable
+
 require: rubocop-performance
 
 Layout/ArgumentAlignment:
@@ -62,16 +65,3 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
-
-# ---------------------------------------------------
-# PENDING COPS: REMOVE AFTER INCORPORATED INTO RUBOCOP
-# ---------------------------------------------------
-
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
