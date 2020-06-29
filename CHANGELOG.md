@@ -1,5 +1,11 @@
 ## Current release (in development)
 
+## 0.12.0 - 2020-06-29
+
+* Enable pending rules by default. [#50](https://github.com/TheGnarCo/gnar-style/pull/50)
+
+  [Kevin Murphy](https://github.com/kevin-j-m)
+
 ## 0.11.0 - 2020-04-16
 
 * Enable pending cops from rubocop version 0.80. [#49](https://github.com/TheGnarCo/gnar-style/pull/49)
