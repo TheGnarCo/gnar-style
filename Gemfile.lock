@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gnar-style (0.12.0)
+    gnar-style (0.13.0)
       rubocop (>= 1.0.0, < 2.0)
       rubocop-performance
       rubocop-rails (~> 2.2.0)

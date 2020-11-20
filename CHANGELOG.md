@@ -1,5 +1,11 @@
 ## Current release (in development)
 
+## 0.13.0 - 2020-11-20
+
+* Lock to major version of rubocop. [#52](https://github.com/TheGnarCo/gnar-style/pull/52)
+
+  [Kevin Murphy](https://github.com/kevin-j-m)
+
 ## 0.12.0 - 2020-06-29
 
 * Enable pending rules by default. [#50](https://github.com/TheGnarCo/gnar-style/pull/50)
