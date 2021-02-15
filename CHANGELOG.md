@@ -1,5 +1,12 @@
 ## Current release (in development)
 
+## 0.14.0 - 2021-2-15
+
+* Bind rubocop to => 0.9.0 to align with `pronto-rubocop`.
+  [#53](https://github.com/TheGnarCo/gnar-style/pull/53)
+
+  [Alex Jarvis](https://github.com/alxjrvs)
+
 ## 0.13.0 - 2020-11-20
 
 * Lock to major version of rubocop. [#52](https://github.com/TheGnarCo/gnar-style/pull/52)
