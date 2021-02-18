@@ -7,7 +7,7 @@ Gnar shared style configurations.
 Add this line to your application's Gemfile:
 
 ```ruby
-group :development, :test
+group :development, :test do
   gem 'gnar-style'
 end
 ```
@@ -94,7 +94,7 @@ Consider the following:
 # In gnar-style/default.yml
 Metrics/BlockLength:
   Exclude:
-    - 'spec/**/*'
+    - "spec/**/*"
 ```
 
 ```yaml
