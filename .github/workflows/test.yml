@@ -1,0 +1,38 @@
+name: Rails Tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+      DATABASE_PASSWORD: password
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_PASSWORD: password
+        ports: ["5432:5432"]
+        options: --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.2
+          bundler-cache: true
+
+      - name: Run Ruby Tests
+        shell: bash
+        run: bundle exec rspec

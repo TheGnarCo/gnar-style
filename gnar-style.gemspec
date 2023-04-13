@@ -7,8 +7,11 @@ Gem::Specification.new do |spec|
   spec.version       = Gnar::Style::VERSION
   spec.authors       = ["The Gnar Company"]
   spec.email         = ["hi@thegnar.co"]
+  spec.post_install_message = ["`gnar-style` is no longer receiving updates.",
+                               "Please use the styles in `.gnarrc` instead:",
+                               "https://github.com/TheGnarCo/.gnarrc"].join(" ")
 
-  spec.summary       = "Style guide default configuration for The Gnar Company"
+  spec.summary       = "[Deprecated] Style guide default configuration for The Gnar Company"
   spec.homepage      = "https://github.com/TheGnarCo/gnar-style"
   spec.license       = "MIT"
 
@@ -27,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.1"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.metadata["rubygems_mfa_required"] = "true"
 end
