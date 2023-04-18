@@ -1,6 +1,9 @@
-# gnar-style
+# gnar-style [Deprecated]
 
 Gnar shared style configurations.
+
+This library is deprecated and will not be receiving further updates.
+Check out [`.gnarrc`](https://github.com/TheGnarCo/.gnarrc) for modern Rubocop guidelines.
 
 ## Installation
 
@@ -122,7 +125,7 @@ gnar-style provides defaults for three different scenarios. You can specify whic
 
 ## Philosophy
 
-Our adherence to our style guide is based on the general case, and not to ensure there are no exceptions. Our philosophy is to use the guide precisely in that way - as a guide. It's not meant as a command that must be taken, but a suggestion to be considered. To the extent that deviations make sense sometimes - great, deviate. However, having rubocop start the discussion and if nothing else, having the author justify to themselves why this deviation is warranted, can be valuable.  
+Our adherence to our style guide is based on the general case, and not to ensure there are no exceptions. Our philosophy is to use the guide precisely in that way - as a guide. It's not meant as a command that must be taken, but a suggestion to be considered. To the extent that deviations make sense sometimes - great, deviate. However, having rubocop start the discussion and if nothing else, having the author justify to themselves why this deviation is warranted, can be valuable.
 
 ## Contributing
 
